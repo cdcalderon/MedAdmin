@@ -1,6 +1,9 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
+// Routes
+import { APP_ROUTES } from './app.routes';
+
 import { AppComponent } from './app.component';
 import { LoginComponent } from './login/login.component';
 import { DashboardComponent } from './pages/dashboard/dashboard.component';
@@ -10,6 +13,7 @@ import { SidebarComponent } from './shared/sidebar/sidebar.component';
 import { BreadcrumbsComponent } from './shared/breadcrumbs/breadcrumbs.component';
 import { ChartsComponent } from './pages/charts/charts.component';
 import { NopagefoundComponent } from './shared/nopagefound/nopagefound.component';
+import { PagesComponent } from './pages/pages/pages.component';
 
 @NgModule({
   declarations: [
@@ -21,10 +25,12 @@ import { NopagefoundComponent } from './shared/nopagefound/nopagefound.component
     HeaderComponent,
     SidebarComponent,
     BreadcrumbsComponent,
-    ChartsComponent
+    ChartsComponent,
+    PagesComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    APP_ROUTES
   ],
   providers: [],
   bootstrap: [AppComponent]
