@@ -6,7 +6,7 @@ import { ProgressComponent } from './pages/progress/progress.component';
 import { ChartsComponent } from './pages/charts/charts.component';
 
 import { NopagefoundComponent } from './shared/nopagefound/nopagefound.component';
-import { PagesComponent } from './pages/pages/pages.component';
+import { PagesComponent } from './pages/pages.component';
 import { RegisterComponent } from './login/register.component';
 
 const appRoutes: Routes = [
