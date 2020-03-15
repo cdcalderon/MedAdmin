@@ -7,6 +7,7 @@ import { ChartsComponent } from './pages/charts/charts.component';
 
 import { NopagefoundComponent } from './shared/nopagefound/nopagefound.component';
 import { PagesComponent } from './pages/pages/pages.component';
+import { RegisterComponent } from './login/register.component';
 
 const appRoutes: Routes = [
   {
@@ -14,12 +15,12 @@ const appRoutes: Routes = [
     component: PagesComponent,
     children: [
       { path: 'dashboard', component: DashboardComponent },
-      { path: 'register', component: LoginComponent },
       { path: 'progress', component: ProgressComponent },
       { path: '', redirectTo: '/dashboard', pathMatch: 'full' },
     ]
   },
   { path: 'login', component: LoginComponent },
+  { path: 'register', component: RegisterComponent },
   { path: 'charts', component: ChartsComponent },
   { path: '**', component: NopagefoundComponent },
 ];
