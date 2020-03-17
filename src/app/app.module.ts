@@ -9,6 +9,8 @@ import { AppComponent } from './app.component';
 import { LoginComponent } from './login/login.component';
 import { RegisterComponent } from './login/register.component';
 import { SharedModule } from './shared/shared.module';
+import { NoopAnimationsModule } from '@angular/platform-browser/animations';
+import { MatTableModule } from '@angular/material/table';
 
 
 @NgModule({
@@ -21,7 +23,9 @@ import { SharedModule } from './shared/shared.module';
     BrowserModule,
     APP_ROUTES,
     PagesModule,
-    SharedModule
+    SharedModule,
+    NoopAnimationsModule,
+    MatTableModule
   ],
   providers: [],
   bootstrap: [AppComponent]
