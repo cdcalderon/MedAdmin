@@ -11,6 +11,7 @@ import { RegisterComponent } from './login/register.component';
 import { SharedModule } from './shared/shared.module';
 import { NoopAnimationsModule } from '@angular/platform-browser/animations';
 import { MatTableModule } from '@angular/material/table';
+import { FormsModule } from '@angular/forms';
 
 
 @NgModule({
@@ -25,7 +26,8 @@ import { MatTableModule } from '@angular/material/table';
     PagesModule,
     SharedModule,
     NoopAnimationsModule,
-    MatTableModule
+    MatTableModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
